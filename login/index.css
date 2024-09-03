@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 10px; /* Padding around the entire container */
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1c0042;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners to content */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    margin-right: 20px; /* Margin to the right of the sidebar */
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .nav-list li {
+    margin: 15px 0;
+}
+
+.sidebar .nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.sidebar .nav-list a:hover {
+    color: #bb86fc;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Enable vertical layout */
+    padding: 20px;
+    background-color: #111111;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow to content */
+    border-radius: 8px; /* Optional: Add rounded corners to content */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.footer-textbox {
+    margin-top: auto; /* Push the textbox to the bottom */
+    padding-top: 20px; /* Add space above the textbox */
+}
+
+.footer-textbox input {
+    background-color: #141414;
+    color: #ffffff;
+    width: 100%; /* Span the entire width of the content area */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
